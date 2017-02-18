@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Angiot Pictures</title>
+		<meta name="description" content="A simple base project to use and extend for new web development projects.">
+		<meta name="author" content="Giorgio Federici">
+		
+		<link rel="shortcut icon" type="image/png" href="favicon.ico"> 
+		
+		<link rel="stylesheet" href="css/style.css"> 
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="wrap-website">
+				<header>
+					<div class="header-logo">
+						<img src="images/angiot-pictures-logo_50x50.jpg" alt="">
+					</div>
+					<div class="header-website-title">
+						<h1>Angiot Pictures</h1>	
+					</div>
+					<div class="header-search">
+						<!--<span><i class="fa fa-search" aria-hidden="true"></i></span>-->
+						<input type="text" name="search" placeholder="Search...">
+					</div>
+					<div class="header-navigation">
+						<input id="menu-btn" class="menu-btn" type="checkbox"  />
+						<label class="menu-icon" for="menu-btn"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></label>
+						<nav id="header-navigation-id">
+							<ul class="menu">
+								<li><a href="#">All Pictures</a></li>
+								<li><a href="{{ url('/regolamento') }}">Animals</a></li>
+								<li><a href="{{ url('/ambientazione') }}">Food</a></li>
+								<li><a href="{{ url('/login') }}">Travels</a></li>
+							</ul>
+						</nav>	
+					</div>
+				</header>
+				<aside>
+					<div class="aside-navigation">
+						<nav>
+							<ul>
+								<li><a href="#">All Pictures</a></li>
+								<li><a href="{{ url('/regolamento') }}">Animals</a></li>
+								<li><a href="{{ url('/ambientazione') }}">Food</a></li>
+								<li><a href="{{ url('/login') }}">Travels</a></li>
+							</ul>
+						</nav>	
+					</div>
+				</aside>
+				<main>
+					<div class="main-content">
+						<ul class="gallery">
+							<li class="gallery__item">
+								<img src="http://www.placehold.it/250x250" alt="">
+								<p>This is my image</p>
+							</li>
+							<li class="gallery__item">
+								<img src="http://www.placehold.it/250x250" alt="">
+								<p>This is my image</p>
+							</li>
+							<li class="gallery__item">
+								<img src="http://www.placehold.it/250x250" alt="">
+								<p>This is my image</p>
+							</li>
+							<li class="gallery__item">
+								<img src="http://www.placehold.it/250x250" alt="">
+								<p>This is my image</p>
+							</li>
+							<li class="gallery__item">
+								<img src="http://www.placehold.it/250x250" alt="">
+								<p>This is my image</p>
+							</li>
+							<li class="gallery__item">
+								<img src="http://www.placehold.it/250x250" alt="">
+								<p>This is my image</p>
+							</li>
+						</ul>
+					</div>	
+				</main>
+				<footer>
+					<div class="footer-credits">
+						<p>Created by Giorgio Federici - Copyright © 2017 Angiot Pictures - All rights reserved</p>
+					</div>
+				</footer>
+			</div>
+		</div>	
+	</body>
+
+</html>

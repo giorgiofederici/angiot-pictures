@@ -1,0 +1,14 @@
+main {
+	@include span(16);
+}
+
+.main-content {
+	text-align: center;
+}
+
+@include susy-breakpoint($gallery-3) {
+	main {
+		@include span(13);
+	}
+}
+

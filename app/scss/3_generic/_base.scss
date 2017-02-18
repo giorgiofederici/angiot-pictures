@@ -1,0 +1,12 @@
+@include border-box-sizing;
+
+body {
+	@include font-size();
+
+	font-family: 'Special Elite', cursive, Arial, "Helvetica Neue", Helvetica, sans-serif;
+	width: 100%;
+	height: auto;
+	//background-image: url('../images/black_denim.png');
+	//background-repeat: repeat;
+	background: $black;
+}

@@ -1,0 +1,37 @@
+.gallery {
+	@include cf;
+
+	list-style: none;
+	padding: 0;
+}
+
+.gallery li {
+	margin: 1rem 0;
+}
+
+.gallery p {
+	margin: 0.3rem 0;
+	color: $white;
+}
+
+@include susy-breakpoint($gallery-2) {
+	.gallery li {
+		@include span(7 of 16);
+
+		margin-left: span(1 wide of 16);
+	}
+}
+
+@include susy-breakpoint($gallery-3) {
+	.gallery {
+		@include span(13 of 13 last);
+	}
+
+	.gallery li {
+		@include span(4 of 13);
+
+		&:nth-child(3n+1) {
+			margin-left: span(1 wide of 16);
+		}
+	}
+}

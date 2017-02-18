@@ -1,0 +1,10 @@
+$susy: (
+	columns: 16,
+	container: 1200/16+em,
+	gutters: 1/4,
+	gutter-position: split,
+	global-box-sizing: border-box,
+	//debug: (image: show),
+);
+
+$breakpoint-set: true;

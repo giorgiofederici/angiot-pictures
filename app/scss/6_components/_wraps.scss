@@ -1,0 +1,13 @@
+.wrap {
+	@include container;
+}
+
+.wrap-website {
+	@include span(16 of 16);
+
+	background-color: $black;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url('../images/black_denim.png');
+	background-repeat: repeat;
+}

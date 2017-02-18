@@ -1,0 +1,17 @@
+h1 { @include font-size($six-up); }
+h2 { @include font-size($five-up); }
+h3 { @include font-size($four-up); }
+h4 { @include font-size($three-up); }
+h5 { @include font-size($two-up); }
+h6 { @include font-size($one-up); }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', cursive, Arial, "Helvetica Neue", Helvetica, sans-serif;
+}

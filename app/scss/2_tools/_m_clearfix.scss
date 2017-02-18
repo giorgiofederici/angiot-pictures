@@ -1,0 +1,8 @@
+// Scss. Clearfix Mixin
+@mixin cf {
+	&::after {
+		content: " ";
+		display: block;
+		clear: both;
+	}
+}

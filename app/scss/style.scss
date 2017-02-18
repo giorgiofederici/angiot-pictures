@@ -1,0 +1,35 @@
+// 1.Settings
+
+@import '1_setting/_config.scss';
+@import '1_setting/_typography.scss';
+@import '1_setting/_colors.scss';
+@import '1_setting/_breakpoints.scss';
+
+// 2.Tools
+
+@import '2_tools/_m_font-size.scss';
+@import '2_tools/_m_clearfix.scss';
+@import 'susy';
+
+// 3.Generics
+
+@import '3_generic/_normalize.scss';
+@import '3_generic/_base.scss';
+
+// 4.Base
+
+@import '4_base/_headings.scss';
+@import '4_base/_paragraphs.scss';
+
+// 6.Components
+@import '6_components/_wraps.scss';
+@import '6_components/_header.scss';
+@import '6_components/_main.scss';
+@import '6_components/_footer.scss';
+@import '6_components/_aside.scss';
+@import '6_components/_gallery.scss';
+
+// 8.Vendors
+@import 'font-awesome';
+@import "breakpoint";
+

@@ -1,0 +1,186 @@
+header {
+	@include span(16);
+
+	margin-left: gutter();
+	margin-right: gutter();
+	margin-top: gutter();
+	background-color: $las-palmas;
+}
+
+.header-logo {
+	@include span(3 of 16);
+
+	margin-top: gutter();
+
+	img {
+		margin: gutter();
+	}
+}
+
+.header-website-title {
+	display: none;
+}
+
+.header-search {
+	@include span(8 of 16);
+
+	position: relative;
+	margin-left: span(3 wide of 16);
+	margin-top: 0.7rem;
+	text-align: right;
+
+	input[type="text"] {
+		width: 100%;
+		max-width: 300px;
+		border: 1px solid #ccc;
+		text-indent: 10px;
+		padding: 5px 0;
+	}
+
+	span {
+		position: absolute;
+		top: 5px;
+		left: 7px;
+	}
+}
+
+.header-navigation {
+	@include span (2 of 16 last);
+
+	text-align: right;
+}
+
+.menu-icon-bar {
+	background-color: #fff;
+	opacity: 0.5;
+	display: block;
+	width: 22px;
+	height: 2px;
+	border-radius: 1px;
+}
+
+.menu-icon-bar + .menu-icon-bar {
+	margin-top: 4px;
+}
+
+.menu {
+	clear: both;
+	max-height: 0;
+	transition: max-height 1s ease-out;
+	background-color: rgba(0, 0, 0, 1);
+	list-style: none;
+	overflow: hidden;
+	padding: 0;
+	text-align: center;
+	line-height: 2.2;
+	border-radius: 5px;
+	margin: 0;
+	width: span(16);
+	position: absolute;
+	left: gutter();
+
+	a {
+		color: $las-palmas;
+		text-decoration: none;
+	}
+}
+
+/* Hamburger Menu */
+
+.menu-icon {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	user-select: none;
+	margin-top: 0.7rem;
+}
+
+.menu-icon .navicon {
+	background: #fff;
+	display: block;
+	height: 2px;
+	position: relative;
+	transition: background 0.2s ease-out;
+	width: 18px;
+}
+
+.menu-icon .navicon::before,
+.menu-icon .navicon::after {
+	background: #fff;
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+	transition: all 0.2s ease-out;
+	width: 100%;
+}
+
+.menu-icon .navicon::before {
+	top: 5px;
+}
+
+.menu-icon .navicon::after {
+	top: -5px;
+}
+
+.menu-btn {
+	display: none;
+}
+
+.menu-btn:checked ~ nav ul.menu {
+	max-height: 240px;
+	background-color: rgba(0, 0, 0, 1);
+	border-radius: 5px;
+
+	a {
+		color: $las-palmas;
+		text-decoration: none;
+	}
+}
+
+.menu-btn:checked ~ .menu-icon .navicon {
+	background: transparent;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon::before {
+	transform: rotate(-45deg);
+}
+
+.menu-btn:checked ~ .menu-icon .navicon::after {
+	transform: rotate(45deg);
+}
+
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon::before,
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon::after {
+	top: 0;
+}
+
+@include susy-breakpoint($gallery-2) {
+	.header-search {
+		@include span(8 of 16);
+
+		margin-left: span(3 wide of 16);
+	}
+}
+
+@include susy-breakpoint($gallery-3) {
+	.header-navigation {
+		display: none;
+	}
+
+	.header-logo {
+		@include span(2 of 16);
+	}
+
+	.header-website-title {
+		@include span(8 of 16);
+
+		margin-left: span(1 wide of 16);
+		margin-bottom: gutter();
+		display: block;
+	}
+
+	.header-search {
+		@include span(5 of 16 last);
+	}
+}
